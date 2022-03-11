@@ -319,6 +319,15 @@ export default function Home() {
                         <br />
                         1. You need to have ETH on rinkeby testnet ($RT)
                         <br />
+                        <a
+                            className="text-blue-600 hover:text-blue-800"
+                            href="https://faucets.chain.link/rinkeby"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            https://faucets.chain.link/rinkeby
+                        </a>
+                        <br />
                         2. You need to have staking token ($ST)
                         <br />
                         <a
@@ -332,11 +341,20 @@ export default function Home() {
                         <br />
                         <a
                             className="text-blue-600 hover:text-blue-800"
-                            href="https://faucets.chain.link/rinkeby"
+                            href="https://rinkeby.etherscan.io/address/0x912944d85E92Cc096db1f2A37F42bf47b248d828"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            https://faucets.chain.link/rinkeby
+                            $RT on Rinkeby Etherscan
+                        </a>
+                        <br />
+                        <a
+                            className="text-blue-600 hover:text-blue-800"
+                            href="https://rinkeby.etherscan.io/address/0x464c438FA2AafEB15F4773E14297979b4F2516F1"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Reward Contract on Rinkeby Etherscan
                         </a>
                     </span>
                 )}
