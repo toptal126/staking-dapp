@@ -325,6 +325,7 @@ export default function Home() {
                             className="text-blue-600 hover:text-blue-800"
                             href="https://rinkeby.etherscan.io/address/0x8ef90905B79a111cF5322a1A8F95900E7568E73A"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             $ST on Rinkeby Etherscan
                         </a>
@@ -333,6 +334,7 @@ export default function Home() {
                             className="text-blue-600 hover:text-blue-800"
                             href="https://faucets.chain.link/rinkeby"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             https://faucets.chain.link/rinkeby
                         </a>
