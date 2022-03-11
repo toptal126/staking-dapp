@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Azeret Mono", monospace;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  .goldentext {
+    background: linear-gradient(-45deg, #ff0000, yellow);
+    background-size: 200% 200%;
+    -webkit-animation: gradient 2s linear infinite;
+    animation: gradient 2s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-shadow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
+      0 0 20px rgba(255, 255, 255, 0.2);
+  }
+
+  .vegas-shadow {
+    font-family: "Fredoka", sans-serif;
+    text-shadow: 2px 3px 1px #47474788;
+    /* transform: perspective(158px) rotateX(15deg) rotateY(4deg); */
+  }
+
+  .fade-in {
+    animation: fadeIn 3s linear;
+    -webkit-animation: fadeIn 3s linear;
+    -moz-animation: fadeIn 3s linear;
+    -o-animation: fadeIn 3s linear;
+    -ms-animation: fadeIn 3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .left-bounce {
+    animation: leftBounce 0.7s ease-in;
+    -webkit-animation: leftBounce 0.7s ease-in;
+    -moz-animation: leftBounce 0.7s ease-in;
+    -o-animation: leftBounce 0.7s ease-in;
+    -ms-animation: leftBounce 0.7s ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  .right-bounce {
+    animation: rightBounce 0.7s ease-in;
+    -webkit-animation: rightBounce 0.7s ease-in;
+    -moz-animation: rightBounce 0.7s ease-in;
+    -o-animation: rightBounce 0.7s ease-in;
+    -ms-animation: rightBounce 0.7s ease-in;
+    animation-fill-mode: forwards;
+  }
+  .animation-delay-1000 {
+    animation-delay: 1000ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  @keyframes leftBounce {
+    from {
+      left: -100vw;
+    }
+    to {
+      left: 0;
+    }
+  }
+  @keyframes rightBounce {
+    from {
+      right: -100vw;
+    }
+    to {
+      right: 0;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      z-index: 0;
+      margin-top: 60vh;
+    }
+    30% {
+      opacity: 0;
+      margin-top: 36vh;
+      z-index: 1;
+    }
+    50% {
+      opacity: 1;
+      margin-top: 20vh;
+    }
+    100% {
+      z-index: 2;
+      opacity: 1;
+      margin-top: 50vh;
+      transform: scale(1.3);
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+}
