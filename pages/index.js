@@ -33,13 +33,6 @@ export default function Home() {
     const [claimableAmount, setClaimableAmount] = useState(0);
 
     useEffect(() => {
-        setInterval(() => {
-            if (provider && account) {
-                getClaimableAmount();
-            }
-        }, 15 * 1000);
-    }, []);
-    useEffect(() => {
         if (provider && account) {
             updateInformation();
         }
@@ -83,6 +76,11 @@ export default function Home() {
         });
         setProvider(_provider);
         setAccount(accounts[0]);
+
+        setInterval(() => {
+            // console.log("Update");
+            getClaimableAmount();
+        }, 15 * 1000);
     };
 
     const allowStakingToken = async () => {
@@ -253,7 +251,7 @@ export default function Home() {
                 </button>
                 {videoBackground()}
                 {account.length != 0 ? (
-                    <div className="flex flex-row pt-8">
+                    <div className="flex flex-col lg:flex-row pt-8">
                         <div className="stake-panel">
                             <span>StakingToken: $ST{stakingTokenBalance}</span>
                             <span>RewardToken: $RT{rewardTokenBalance}</span>
@@ -317,7 +315,7 @@ export default function Home() {
                         Connect Wallet
                         <br />
                         <br />
-                        1. You need to have ETH on rinkeby testnet ($RT)
+                        1. You need to have ETH on rinkeby testnet
                         <br />
                         <a
                             className="text-blue-600 hover:text-blue-800"

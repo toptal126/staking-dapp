@@ -30,7 +30,7 @@
     }
 
     .main-panel {
-        @apply h-[30rem] w-full backdrop-blur-sm flex flex-col py-5 px-1;
+        @apply h-[unset] lg:h-[30rem] w-full backdrop-blur-sm flex flex-col py-5 px-1;
     }
     .stake-panel {
         @apply main-panel bg-emerald-700 bg-opacity-40;
