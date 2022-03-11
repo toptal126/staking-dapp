@@ -317,9 +317,23 @@ export default function Home() {
                         Connect Wallet
                         <br />
                         <br />
-                        You need to have ETH on rinkeby testnet
+                        1. You need to have ETH on rinkeby testnet ($RT)
                         <br />
-                        <a href="https://faucets.chain.link/rinkeby">
+                        2. You need to have staking token ($ST)
+                        <br />
+                        <a
+                            className="text-blue-600 hover:text-blue-800"
+                            href="https://rinkeby.etherscan.io/address/0x8ef90905B79a111cF5322a1A8F95900E7568E73A"
+                            target="_blank"
+                        >
+                            $ST on Rinkeby Etherscan
+                        </a>
+                        <br />
+                        <a
+                            className="text-blue-600 hover:text-blue-800"
+                            href="https://faucets.chain.link/rinkeby"
+                            target="_blank"
+                        >
                             https://faucets.chain.link/rinkeby
                         </a>
                     </span>
