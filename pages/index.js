@@ -313,7 +313,16 @@ export default function Home() {
                         </div>
                     </div>
                 ) : (
-                    "Connect Wallet"
+                    <span className="mx-auto mt-10 text-3xl p-5 bg-violet-200 bg-opacity-20 rounded-sm text-center text-pink-700">
+                        Connect Wallet
+                        <br />
+                        <br />
+                        You need to have ETH on rinkeby testnet
+                        <br />
+                        <a href="https://faucets.chain.link/rinkeby">
+                            https://faucets.chain.link/rinkeby
+                        </a>
+                    </span>
                 )}
             </main>
         </div>
